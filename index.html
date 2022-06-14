@@ -255,6 +255,28 @@
                     </use>
                     </svg>
                 </button>
+                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                <form class="userdata">
+                    <div class="modal-field">
+                        <label for="name" class="modal-label" >Имя</label>
+                    <input type="text" class="modal-input" name="user-name" id="name" required placeholder="Имя">
+                </div>
+                    <div class="modal-field">
+                        <label for="tel" class="modal-label">Телефон</label>
+                    <input type="tel" class="modal-input" name="user-tel" id="tel">
+                </div>
+                    <div class="modal-field">
+                        <label for="name" class="modal-label">Почта</label>
+                    <input type="email" class="modal-input" name="user-email" id="email">
+                </div>
+                <div class="modal-field">
+                    <label for="user-text" class="modal-label">Комментарий</label>
+                    <textarea name="user-text"  class="modal-comments" id="user-text" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                </div>
+                
+                    <button type="submit" class="modal-button">Отправить</button>
+                    </form>
+                
     </div>
 </div>
 <script src="./js/modal.js"></script>
