@@ -848,6 +848,10 @@ color: #FFFFFF99;
 text-decoration: none;
 }
 
+.phone {
+    margin-right: 0px;
+}
+
 .mail {
     display: inline-block;
     
@@ -946,6 +950,46 @@ display: flex;
     transition: 250ms var(--timingfunction);
 }
 
+
+
+
+
+/* -------------------------------Footer form---------------------------------------*/
+
+.footer-submit {
+    margin-left: 93px;
+}
+
+.footer-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: var(--footerbcg);
+}
+
+.footer-submit input::placeholder {
+    padding-left: 15px ;
+}
+
+.footer-button {
+    width: 150px;
+    height: 50px;
+    border: transparent;
+    border-radius: 4px;
+    background-color: var(--accent);
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------Backdrop------------------------------------------ */
 .backdrop {
     position: fixed;
     width: 1600x;
@@ -1092,7 +1136,6 @@ color: #757575;
 .modal-field.policy {
     margin-bottom: 30px;
 }
-
 
 
 
