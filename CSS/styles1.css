@@ -102,6 +102,7 @@ h3 {
     padding-top: 30px;
     padding-bottom: 30px;
     display: inline-block;
+    transition: color 250ms var(--timingfunction);
 }
 
 .nav .item {
@@ -132,6 +133,7 @@ h3 {
     border-radius: 2px;
     opacity: 1;
     background-color: #2196F3;
+    transition: opacity 2000ms var(--timingfunction);
 
 }
 
@@ -184,7 +186,7 @@ line-height: 16px;
 letter-spacing: 0.02em;
 text-decoration: none;
 color: #212121;
- 
+transition: color 250ms var(--timingfunction);
 cursor: pointer;
 }
 
@@ -432,21 +434,28 @@ color: var(--titletextcolor)
 }
 
 .photo-sign {
+     display: flex;
     position: absolute;
+    padding: 0;
+    margin: 0;
     bottom: 0;
-    width: 370px;
+    left: 0;
+    width: 100%;
     height: 70px;
-    padding-top: 27px;
+
+    background: rgba(47, 48, 58, 0.8);
+   
     font-weight: 700;
 font-size: 14px;
-line-height: 16px;
-text-align: center;
+line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-text-align: center;
+
+align-items: center;
+justify-content: center;
+
 
 color: #FFFFFF;
-background: rgba(47, 48, 58, 0.8);
 }
 
 
@@ -528,7 +537,7 @@ margin-bottom: 16px;
     align-items: center;
     justify-content: center;
     fill: #AFB1B8;
-    
+    transition: fill 250ms var(--timingfunction), background-color 250ms var(--timingfunction);
     
 }
 
@@ -536,7 +545,7 @@ margin-bottom: 16px;
 .social-link:focus {
     background-color: var(--accent);
     fill: #ffffff;
-    transition: 250ms var(--timingfunction);
+    
 }
 
 
@@ -570,10 +579,12 @@ display: flex;
     justify-content: center;
     border:1px solid #AFB1B8; 
     border-radius:4px;
+    transition: border-color 250ms var(--timingfunction);
 }
 
 .clients-icons {
-    fill: #AFB1B8
+    fill: #AFB1B8;
+    transition: fill 250ms var(--timingfunction);
     
 }
 
@@ -581,14 +592,14 @@ display: flex;
 .clients-link:hover .clients-icons, 
 .clients-link:focus .clients-icons{ 
     fill: var(--accent);
-    transition: 250ms var(--timingfunction);
+   
     
 }
 
 .clients-link:hover,
 .clients-link:focus {
     border-color: var(--accent);
-    transition: 250ms var(--timingfunction);
+  
  
 }
 
@@ -621,6 +632,7 @@ border-radius: 4px;
 .nav-portfolio .button {
     padding: 6px 22px;
     border: 1px solid transparent;
+    transition: color 250ms var(--timingfunction), box-shadow 250ms var(--timingfunction);
 
 }
 
@@ -821,6 +833,7 @@ letter-spacing: 0.03em;
 text-decoration: none;
 
   color: #FFFFFF;
+   transition: color 250ms var(--timingfunction);
   
 }
 
@@ -840,6 +853,7 @@ letter-spacing: 0.03em;
 
 color: #FFFFFF99;
 text-decoration: none;
+transition: color 250ms var(--timingfunction);
 }
 
 .phone {
@@ -921,6 +935,7 @@ display: flex;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
     fill: #FFFFFF;
+    transition: background-color250ms var(--timingfunction);
     
 
 }
@@ -1012,7 +1027,7 @@ display: flex;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity 2500ms, visibility 2500ms;
+    transition: opacity 250ms, visibility 250ms;
 
 }
 
@@ -1025,10 +1040,9 @@ display: flex;
 
 .modal {
     position: absolute;
-    top: 21.6%;
+    top: 50%;
     left: 50%;
-    right: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, 50%);
     width: 528px;
     min-height: 581px;
     padding: 40px;
@@ -1126,8 +1140,9 @@ resize: none;
 padding: 12px 16px;
 }
 
-/* .policy {
-    
+.policy {
+    display: flex;
+    align-items: baseline;
    width: 100%;
     max-width: 425px;
     height: 24px;
@@ -1137,7 +1152,20 @@ padding: 12px 16px;
     margin-bottom: 30px;
 
     outline: 1px solid tomato;
-} */
+}
+
+.checkbox:checked .checkbox-icon {
+    appearance: none;
+}
+
+.checkbox-icon {
+    display: inline-block;
+    
+    width: 20px;
+    height: 20px;
+    background-color: #2196F3;
+    outline: 1px solid tomato;
+}
 
 .policy-text {
     font-weight: 400;
@@ -1145,7 +1173,7 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 outline: 1px solid rgb(55, 21, 114);
-color: #757575;
+color: blue;
 }
 
 .modal-field.policy {
