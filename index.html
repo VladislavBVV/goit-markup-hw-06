@@ -245,10 +245,6 @@
             </li>
         </ul>
         </div>
-
-           
-           
-           
             <div class="footer-submit">
                 <h3 class="footer-title">Подпишитесь на рассылку</h3>
                 
@@ -256,23 +252,9 @@
             <label for="email"></label>
             <input type="email" name="user-email" class="footer-input" id="email" placeholder="E-mail">
             <button type="submit" class="footer-button ">Подписаться</button>
-            </div>
-               
-               
+            </div>  
            </form>
-
-
-
-
-
-
         </div>
-
-
-          
-
-
-        
     </footer>
     <div class="backdrop is-hidden" data-modal>
     <div class="modal">
@@ -286,28 +268,35 @@
                 <form class="userdata">
                     <div class="modal-field">
                         <label for="name" class="modal-label" >Имя</label>
-                    <input type="text" class="modal-input" name="user-name" id="name" required placeholder="Имя">
+                        <div class="input-field"><input type="text" class="modal-input" name="user-name" id="name" >
+                    <svg class="input-icon1" width="18" height="18" >
+                    </svg>
+                </div>    
+                        
+                
+                    
                 </div>
                     <div class="modal-field">
                         <label for="tel" class="modal-label">Телефон</label>
-                    <input type="tel" class="modal-input" name="user-tel" id="tel">
+                        <div class="input-field"><input type="tel" class="modal-input" name="user-tel" id="tel">
+                    <svg class="input-icon2" width="18" height="18" >
+                    </svg></div>
+                    
                 </div>
                     <div class="modal-field">
                         <label for="email" class="modal-label">Почта</label>
-                    <input type="email" class="modal-input" name="user-email" id="email">
+                        <div class="input-field"> <input type="email" class="modal-input" name="user-email" id="email">
+                    <svg class="input-icon3" width="18" height="18" >
+                    </svg></div>
+                   
                 </div>
                 <div class="modal-field comment">
                     <label for="user-text" class="modal-label">Комментарий</label>
                     <textarea name="user-text"  class="modal-comments" id="user-text" placeholder="Введите текст"></textarea>
                 </div>
-                <div class="modal-field policy">
-                    
-                    <label class="policy-text"><input class="checkbox" type="checkbox" name="policy">
-                        <svg  width="20" height="20" class="checkbox-icon">
-                    <use href="./IMG/symbol-defs.svg#icon-close-black-18dp">
-                    </use>
-                    </svg>
-                        Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                <div class="checkbox-field">
+                    <input type="checkbox" name="policy" id="policy" class="checkbox is-hidden">
+                        <label for="policy" class="policy-text">Соглашаюсь с рассылкой и принимаю<div class="policy-terms">Условия договора</div> </label>
                 </div>
                 
                     <button type="submit" class="modal-button">Отправить</button>
