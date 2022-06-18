@@ -619,7 +619,7 @@ text-align: center;
 letter-spacing: 0.03em;
 padding: 6px 22px;
     border: 1px solid transparent;
-    transition: background-color 2500ms var(--timingfunction), box-shadow 2500ms var(--timingfunction);
+    transition: background-color 250ms var(--timingfunction), box-shadow 250ms var(--timingfunction);
 color: #212121;
 
 }
