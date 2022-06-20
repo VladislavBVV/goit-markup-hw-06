@@ -1056,27 +1056,11 @@ display: flex;
 }
 
 
-.input-icon1 {
+.input-icon {
     position: absolute;
-    top: 11px;
     left: 12px;
-    background-image: url(../IMG/person-black.svg);
-
-}
-
-.input-icon2 {
-    position: absolute;
-    top: 11px;
-    left: 12px;
-    background-image: url(../IMG/phone-black.svg);
-
-}
-
-.input-icon3 {
-    position: absolute;
-    top: 11px;
-    left: 12px;
-    background-image: url(../IMG/email-black.svg);
+    top: 50%;
+    transform: translateY(-50%);
 
 }
 
@@ -1123,9 +1107,22 @@ margin-bottom: 12px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 35px;
+   
+}
+
+
+.modal-label:hover,
+.modal-label:focus {
+border-color: var(--);
 
 
 }
+
+.modal-input:focus + .input-icon {
+    fill: var(--accent);
+}
+
+
 
 .modal-label {
     font-size: 12px;
@@ -1200,6 +1197,7 @@ color: #2196F3;
     background-repeat: no-repeat;
    background-position: center;
     border: none;
+   
 }
 
 .checkbox:focus + .policy-text::before {
