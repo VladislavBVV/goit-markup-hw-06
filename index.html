@@ -300,10 +300,16 @@
                     <label for="user-text" class="modal-label">Комментарий</label>
                     <textarea name="user-text"  class="modal-comments" id="user-text" placeholder="Введите текст"></textarea>
                 </div>
+
                 <div class="checkbox-field">
-                    
                         <label for="policy">
-                            <input type="checkbox" name="policy" id="policy" class="checkbox is-hidden"><span class="policy-text">Соглашаюсь с рассылкой и принимаю <a href="" class="policy-terms">Условия договора</a></span> </label>
+                            <input type="checkbox" 
+                            name="policy" 
+                            value="true"
+                            class="checkbox is-hidden"
+                            id="policy">
+                            <span class="policy-text">Соглашаюсь с рассылкой и принимаю <a href="" class="policy-terms">Условия договора</a></span> 
+                        </label>
                 </div>
                 
                     <button type="submit" class="modal-button">Отправить</button>

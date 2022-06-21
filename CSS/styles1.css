@@ -1216,7 +1216,9 @@ color: #2196F3;
    
 }
 
-.checkbox:focus + .policy-text::before {
+
+
+.checkbo:focus + .policy-text::before {
     background-color: var(--accent);
     background-image: url(../IMG/checkbox.svg);
     background-repeat: no-repeat;
