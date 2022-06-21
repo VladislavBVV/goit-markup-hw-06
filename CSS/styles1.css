@@ -1171,7 +1171,7 @@ transition: border-color 250ms var(--timingfunction);
     display: flex;
     margin: auto;
     margin-bottom: 30px;
-    padding: 8px;
+    
     
 }
 
@@ -1216,16 +1216,6 @@ color: #2196F3;
     border: none;
    
 }
-
-
-
-/* .checkbox:focus + .policy-text::before {
-    background-color: var(--accent);
-    background-image: url(../IMG/checkbox.svg);
-    background-repeat: no-repeat;
-   background-position: center;
-    border: none;
-} */
 
 
 .visually-hidden {
